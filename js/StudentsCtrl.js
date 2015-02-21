@@ -7,8 +7,8 @@ studentRoster.controller('StudentsCtrl', function StudentsCtrl($scope) {
     { name: "Brentwood Davis" }
   ];
   $scope.addStudent = function() {
-    $scope.students.push({ name: $scope.studentName });
-    $scope.studentName = null;
+    $scope.students.push({ name: $scope.nameInput });
+    $scope.nameInput = null;
   };
   $scope.deleteStudent = function(student) {
     var index = $scope.students.indexOf(student)
